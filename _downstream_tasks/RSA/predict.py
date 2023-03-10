@@ -95,7 +95,7 @@ def getParam():
     # data
     parser.add_argument('--rootdir', default=current_directory,
                         type=str)
-    parser.add_argument('--featdir', default='/mnt/d/_Codes/_Pythonprojects/RNA-MSM-republic/results',
+    parser.add_argument('--featdir', default=str(current_directory / "results"),
                         type=str)
     parser.add_argument('--rnaid', default='2DRB_1',
                         type=str)
@@ -144,14 +144,14 @@ if __name__ == '__main__':
                 model.eval()
                 outputs = model(x_train)
                 out_pred = torch.squeeze(outputs)
-                dirout = out+f'/model_{i}/'
+                dirout = out+f'/{pdbid}_{i}/'
                 check_path(dirout)
 
                 pred_asa,predict_rsa  = doSavePredict_single(pdbid, seq, out_pred.numpy(),
                               dirout, f'{pdbid} predict by {model_path.rsplit("/",1)[1]}\n')
                 ensomle_asa_ours.append(pred_asa)
 
-            dirout = out+f'/ensemble/'
+            dirout = out+f'/{pdbid}_ensemble/'
             check_path(dirout)
             ensomle_asa_ours = np.array(ensomle_asa_ours).mean(0)
             pred_asa,predict_rsa = doSavePredict_single(pdbid, seq, None,
@@ -165,12 +165,3 @@ if __name__ == '__main__':
             plot(pred_asa,label='RNA-MSM ASA predictor',title='predicted ASA')
             plt.legend()
             plt.savefig(out+f'/{pdbid}_asa.png')
-
-
-
-
-
-
-
-
-
