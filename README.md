@@ -112,7 +112,7 @@ Solvent accessibility prediction results include 6 files:
 We show the final result directory as follow:
 
 ```
-results
+./results
 |-- 2DRB_1.a2m_msa2
 |-- 2DRB_1_atp.npy
 |-- 2DRB_1_emb.npy
