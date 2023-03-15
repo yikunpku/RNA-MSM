@@ -12,7 +12,7 @@ import msm
 
 
 def _has_regression_weights(model_name):
-    """Return whether we expect / require regression weights;
+    """Return whether we expect / require regression pretrained;
     Right now that is all models except ESM-1v"""
     return not ("esm1v" in model_name)
 
@@ -56,7 +56,7 @@ def load_model_and_alphabet_hub(model_name):
 
 
 def load_model_and_alphabet_local(model_location):
-    """ Load from local path. The regression weights need to be co-located """
+    """ Load from local path. The regression pretrained need to be co-located """
     model_location = Path(model_location)
     model_data = torch.load(str(model_location), map_location="cpu")
     model_name = model_location.stem
@@ -146,7 +146,7 @@ def load_model_and_alphabet_core(model_data, regression_data=None):
             )
         if expected_missing - found_keys:
             warnings.warn(
-                "Regression weights not found, predicting contacts will not produce correct results."
+                "Regression pretrained not found, predicting contacts will not produce correct results."
             )
 
     model.load_state_dict(model_state, strict=regression_data is not None)

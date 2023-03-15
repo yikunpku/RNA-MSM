@@ -17,6 +17,7 @@ from sklearn.preprocessing import OneHotEncoder
 import numpy as np
 import sys
 current_directory = Path(__file__).parent.absolute()
+root_directory = Path(__file__).parents[2]
 sys.path.append(str(current_directory))
 
 class bcolors:
@@ -95,7 +96,7 @@ def getParam():
     # data
     parser.add_argument('--rootdir', default=current_directory,
                         type=str)
-    parser.add_argument('--featdir', default=str(current_directory / "results"),
+    parser.add_argument('--featdir', default=Path(root_directory / "results"),
                         type=str)
     parser.add_argument('--rnaid', default='2DRB_1',
                         type=str)

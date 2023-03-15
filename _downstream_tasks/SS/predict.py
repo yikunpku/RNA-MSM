@@ -1,5 +1,6 @@
 import torch
 from pathlib import Path
+import sys
 from argparse import ArgumentParser
 import os
 from code.pre_processing.data_fomat import format_input_shape
@@ -8,6 +9,8 @@ from code.model import renet_b16
 from code.post_processing.processing_output import prob_to_secondary_structure
 
 current_directory = Path(__file__).parent.absolute()
+root_directory = Path(__file__).parents[2]
+sys.path.append(str(current_directory))
 
 def predict(model, data_use_test, device):
     """
@@ -28,7 +31,7 @@ def getParam():
     parser = ArgumentParser()
     parser.add_argument('--rootdir', default=current_directory,
                         type=str)
-    parser.add_argument('--featdir', default='./results',
+    parser.add_argument('--featdir', default=Path(root_directory / "results"),
                         type=str)
     parser.add_argument('--rnaid', default='2DRB_1',
                         type=str)
@@ -56,4 +59,4 @@ if __name__ == '__main__':
     model.load_state_dict(model_para)
     preds = predict(model, test_data, args.device)
     for rna_name, seq, model_output in preds:
-        prob_to_secondary_structure(model_output, seq, rna_name, args, args.rootdir, args.featdir)  # model_outputs, seq, name, args, base_path
+        prob_to_secondary_structure(model_output, seq, rna_name, args, args.rootdir, args.featdir)

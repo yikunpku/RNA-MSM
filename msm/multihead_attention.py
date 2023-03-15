@@ -170,16 +170,16 @@ class MultiheadAttention(nn.Module):
             key_padding_mask (ByteTensor, optional): mask to exclude
                 keys that are pads, of shape `(batch, src_len)`, where
                 padding elements are indicated by 1s.
-            need_weights (bool, optional): return the attention weights,
+            need_weights (bool, optional): return the attention pretrained,
                 averaged over heads (default: False).
             attn_mask (ByteTensor, optional): typically used to
                 implement causal attention, where the mask prevents the
                 attention from looking forward in time (default: None).
             before_softmax (bool, optional): return the raw attention
-                weights and values before the attention softmax.
+                pretrained and values before the attention softmax.
             need_head_weights (bool, optional): return the attention
-                weights for each head. Implies *need_weights*. Default:
-                return the average attention weights over all heads.
+                pretrained for each head. Implies *need_weights*. Default:
+                return the average attention pretrained over all heads.
         """
         if need_head_weights:
             need_weights = True
@@ -391,7 +391,7 @@ class MultiheadAttention(nn.Module):
                 bsz, self.num_heads, tgt_len, src_len
             ).transpose(1, 0)
             if not need_head_weights:
-                # average attention weights over heads
+                # average attention pretrained over heads
                 attn_weights = attn_weights.mean(dim=0)
 
         return attn, attn_weights
