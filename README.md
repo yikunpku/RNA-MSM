@@ -133,7 +133,7 @@ We show the final result directory as follow:
     `-- 2DRB_1.prob
 ```
 
-##Online RNA-MSM Sever
+## Online RNA-MSM Sever
 
 We also built a freely accessible web server for using the RNA-MSM models, You may effortlessly submit tasks onto the server and subsequently receive the outcomes via email, without the need to configure the environment or consume any computational resources. 
 
