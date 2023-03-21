@@ -2,7 +2,7 @@
 
 **Multiple sequence-alignment-based RNA language model and its application to structural inference**
 
-[RNA-MSM web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm) | [Cite]()
+[RNA-MSM web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm) | [Cite](https://scholar.googleusercontent.com/scholar.bib?q=info:Ve3M-8N0sL4J:scholar.google.com/&output=citation&scisdr=CgWsQMSJEMKA47l5nP8:AAGBfm0AAAAAZBl_hP-Wuf2Z4FzIXrJ-Ph-DmMy-huaZ&scisig=AAGBfm0AAAAAZBl_hJ4T8y2yy4GYYEsiMPzoedC2jmtk&scisf=4&ct=citation&cd=-1&hl=zh-CN)
 
 This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility task. 
 
@@ -146,6 +146,14 @@ As a preview, take a swift glance at the website:
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 
 ```
+@article{zhang2023multiple,
+  title={Multiple sequence-alignment-based RNA language model and its application to structural inference},
+  author={Zhang, Yikun and Lang, Mei and Jiang, Jiuhong and Gao, Zhiqiang and Xu, Fan and Litfin, Thomas and Chen, Ke and Singh, Jaswinder and Huang, Xiansong and Song, Guoli and others},
+  journal={bioRxiv},
+  pages={2023--03},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
 ```
 
 
