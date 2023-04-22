@@ -4,7 +4,7 @@
 
 [RNA-MSM web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm) | [Cite](https://www.biorxiv.org/content/10.1101/2023.03.15.532863v1.abstract)
 
-This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility tasks and corresponding [RNA datasets](https://www.biorxiv.org/content/10.1101/2023.03.15.532863v1.abstract). 
+This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility tasks and corresponding [RNA datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=share_link). 
 
 RNA-MSM is the first unsupervised MSA RNA language model based on aligned homologous sequences that outputs both embedding and attention map to match different types of downstream tasks.
 
