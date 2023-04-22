@@ -2,9 +2,9 @@
 
 **Multiple sequence-alignment-based RNA language model and its application to structural inference**
 
-[RNA-MSM web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm) | [Cite](https://scholar.googleusercontent.com/scholar.bib?q=info:Ve3M-8N0sL4J:scholar.google.com/&output=citation&scisdr=CgWsQMSJEMKA47l5nP8:AAGBfm0AAAAAZBl_hP-Wuf2Z4FzIXrJ-Ph-DmMy-huaZ&scisig=AAGBfm0AAAAAZBl_hJ4T8y2yy4GYYEsiMPzoedC2jmtk&scisf=4&ct=citation&cd=-1&hl=zh-CN)
+[RNA-MSM web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm) | [Cite](https://www.biorxiv.org/content/10.1101/2023.03.15.532863v1.abstract)
 
-This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility task. 
+This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility tasks and corresponding [RNA datasets](https://www.biorxiv.org/content/10.1101/2023.03.15.532863v1.abstract). 
 
 RNA-MSM is the first unsupervised MSA RNA language model based on aligned homologous sequences that outputs both embedding and attention map to match different types of downstream tasks.
 
@@ -27,6 +27,8 @@ conda activate RNA-MSM
 
 ### Data Preparation
 
+#### Pretrain Data
+
 RNA-MSM model operate on RNA homologous sequences (multiple sequence alignment; MSA), which contains information about conserved properties, co-evolution and functional-species evolutionary relationships (phylogenetics) in the amino acid sequences of constituent RNAs. 
 
 The effectiveness of predictions made by the RNA-MSM model is largely dependent on the quantity and quality of MSAs. Therefore, we recommend utilizing our recently developed [RNAcmap3](https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz) tool to search for homologous sequences of the target RNA sequences to serve as input for the RNA-MSM model.
@@ -34,6 +36,10 @@ The effectiveness of predictions made by the RNA-MSM model is largely dependent 
 You may also gain entry to our [online web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm), wherein you can provide the target sequence, and subsequently receive the MSA files and two downstream tasks prediction results located via email.
 
 The input MSA file should be be situated within `./results` folder, and its suffix ought to be `.a2m_msa2`.
+
+#### Downstream Task Data
+
+The training, validation, and testing datasets used for our downstream tasks are currently available to the public and can be downloaded via this [link](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=share_link).
 
 ### Access Pre-trained Model
 
@@ -135,7 +141,7 @@ We show the final result directory as follow:
 
 ## Online RNA-MSM Sever
 
-We also built a freely accessible web server for using the RNA-MSM models, You may effortlessly submit tasks onto the server and subsequently receive the outcomes via email, without the need to configure the environment or consume any computational resources. 
+We also built a freely accessible [web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm) for using the RNA-MSM models, You may effortlessly submit tasks onto the server and subsequently receive the outcomes via email, without the need to configure the environment or consume any computational resources. 
 
 As a preview, take a swift glance at the website:
 
