@@ -7,10 +7,10 @@
 <-- -->
 <br />
 <div align="center">
-  <h3 align="center">RNA-MSM</h3>
+  <h1 align="center">Nucleic Acids Research 2024: RNA-MSM</h1>
 
-  <p align="center">
-    Nucleic Acids Research 2024: Multiple sequence-alignment-based RNA language model and its application to structural inference
+  <h5 align="center">
+     Multiple sequence-alignment-based RNA language model and its application to structural inference
     <br />
     <br />
     <a href="https://aigene.cloudbastion.cn/#/rna-msm">RNA-MSM Web Server</a>
@@ -25,7 +25,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Table of Contents </summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
