@@ -1,24 +1,13 @@
-<br />
 <div align="center">
-  <h1 align="center">Nucleic Acids Research 2024: RNA-MSM</h1>
 
-  <h3 align="center">
-     Multiple sequence-alignment-based RNA language model and its application to structural inference
-    <br />
-    <br />
-    <a href="https://aigene.cloudbastion.cn/#/rna-msm">RNA-MSM Web Server</a>
-    ·
-    <a href="https://academic.oup.com/nar/article/52/1/e3/7369930">Paper</a>
-    ·
-    <a href="https://github.com/yikunpku/RNA-MSM/issues">Report Bug</a>
-  </p>
+# 【Nucleic Acids Research 2024】 RNA-MSM
+## Multiple sequence-alignment-based RNA language model and its application to structural inference
+### [RNA-MSM Web Server](https://aigene.cloudbastion.cn/#/rna-msm) | [Paper](https://academic.oup.com/nar/article/52/1/e3/7369930) | [Report Bug](https://github.com/yikunpku/RNA-MSM/issues)
+
 </div>
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents </summary>
+  <summary><strong>Table of Contents </strong> </summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -55,7 +44,6 @@ The resulting RNA-MSM model produced attention maps and embeddings that have dir
 
 ## :rocket: Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Pre-requisites
