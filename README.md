@@ -1,7 +1,7 @@
 <div align="center">
 
 # 【Nucleic Acids Research 2024】🧬RNA-MSM
-**Multiple sequence-alignment-based RNA language model and its application to structural inference**
+**Multiple sequence-alignment-based RNA language model and its application to structural inference** <br>
 [RNA-MSM Web Server](https://aigene.cloudbastion.cn/#/rna-msm) | [Paper](https://academic.oup.com/nar/article/52/1/e3/7369930) | [Report Bug](https://github.com/yikunpku/RNA-MSM/issues)
 
 </div>
