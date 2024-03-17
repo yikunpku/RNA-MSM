@@ -67,7 +67,7 @@ RNA-MSM model operate on RNA homologous sequences (multiple sequence alignment; 
 
 The effectiveness of predictions made by the RNA-MSM model is largely dependent on the quantity and quality of MSAs. Therefore, we recommend utilizing our recently developed [RNAcmap3](https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz) tool to search for homologous sequences of the target RNA sequences to serve as input for the RNA-MSM model.
 
-You may also gain entry to our [online web server](https://aigene.cloudbrain2.pcl.ac.cn/#/rna-msm), wherein you can provide the target sequence, and subsequently receive the MSA files and two downstream tasks prediction results located via email.
+You may also gain entry to our [online web server](https://aigene.cloudbastion.cn/#/rna-msm), wherein you can provide the target sequence, and subsequently receive the MSA files and two downstream tasks prediction results located via email.
 
 The input MSA file should be be situated within `./results` folder, and its suffix ought to be `.a2m_msa2`.
 
