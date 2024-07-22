@@ -33,7 +33,7 @@
 
 ## 📣 Updates
 
-* **[2024/7/22]**: We release the [downstream task datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing) along with its Multiple Sequence Alignment (MSA) searched by [RNACMAP3](https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz). Included in this release is the split RNA ID, enabling you to utilize this dataset for replication or your own research.
+* **[2024/7/22]**: We release the [downstream task datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing) along with its Multiple Sequence Alignment (MSA) searched by [RNAcmap3](https://academic.oup.com/gpb/article/22/1/qzae018/7617691). Included in this release is the split RNA ID, enabling you to utilize this dataset for replication or your own research.
 
 <!-- ABOUT THE PROJECT -->
 <div id="About The Project">
@@ -77,7 +77,7 @@ conda activate RNA-MSM
 
 RNA-MSM model operate on RNA homologous sequences (multiple sequence alignment; MSA), which contains information about conserved properties, co-evolution and functional-species evolutionary relationships (phylogenetics) in the amino acid sequences of constituent RNAs. 
 
-The effectiveness of predictions made by the RNA-MSM model is largely dependent on the quantity and quality of MSAs. Therefore, we recommend utilizing our recently developed [RNAcmap3](https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz) tool to search for homologous sequences of the target RNA sequences to serve as input for the RNA-MSM model.
+The effectiveness of predictions made by the RNA-MSM model is largely dependent on the quantity and quality of MSAs. Therefore, we recommend utilizing our recently developed [RNAcmap3](https://academic.oup.com/gpb/article/22/1/qzae018/7617691) tool to search for homologous sequences of the target RNA sequences to serve as input for the RNA-MSM model.
 
 You may also gain entry to our [online web server](https://aigene.cloudbastion.cn/#/rna-msm), wherein you can provide the target sequence, and subsequently receive the MSA files and two downstream tasks prediction results located via email.
 
