@@ -2,35 +2,46 @@
 
 # 【Nucleic Acids Research 2024】🧬RNA-MSM
 **Multiple sequence-alignment-based RNA language model and its application to structural inference** <br>
-[RNA-MSM Web Server](https://aigene.cloudbastion.cn/#/rna-msm) | [Paper](https://academic.oup.com/nar/article/52/1/e3/7369930) | [Report Bug](https://github.com/yikunpku/RNA-MSM/issues)
+[RNA-MSM Web Server](https://aigene.cloudbastion.cn/#/rna-msm) | [Paper](https://academic.oup.com/nar/article/52/1/e3/7369930) | [Report Bug](https://github.com/yikunpku/RNA-MSM/issues) | [Citation](#Citation)
 
 </div>
 <!-- TABLE OF CONTENTS -->
-<details>
+<details open>
   <summary><strong>Table of Contents </strong> </summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Updates">Updates</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#About The Project">About The Project</a>
+    </li>
+    <li>
+      <a href="#Getting Started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Inference</a></li>
+        <li><a href="#Prerequisites">Prerequisites</a></li>
+        <li><a href="#Inference">Inference</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Online RNA-MSM Sever</a></li>
-    <li><a href="#contact">Citation</a></li>
-    <li><a href="#acknowledgments">Contact</a></li>
+    <li><a href="#Online RNA-MSM Sever">Online RNA-MSM Sever</a></li>
+    <li><a href="#Citation">Citation</a></li>
+    <li><a href="#Contact">Contact</a></li>
   </ol>
 </details>
 
 
+<div id="Updates">
+
+## 📣 Updates
+
+* **[2024/7/22]**: We release the [downstream task datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing) along with its Multiple Sequence Alignment (MSA) searched by [RNACMAP3]((https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz)). Included in this release is the split RNA ID, enabling you to utilize this dataset for replication or your own research.
 
 <!-- ABOUT THE PROJECT -->
+<div id="About The Project">
+
 ## :blue_book: About The Project
 
-This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility tasks and corresponding [RNA datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=share_link). 
+
+This repository contains codes and [pre-trained weight](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) for MSA RNA language model (**RNA-MSM**) as well as RNA secondary structure and solvent accessibility tasks and corresponding [RNA datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing). 
 
 RNA-MSM is the first unsupervised MSA RNA language model based on aligned homologous sequences that outputs both embedding and attention map to match different types of downstream tasks.
 
@@ -38,13 +49,14 @@ The resulting RNA-MSM model produced attention maps and embeddings that have dir
 
 ![RNA-MSM_Fig1](https://user-images.githubusercontent.com/122002181/224082314-026873db-56d0-42cb-8930-3249b553a924.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<div id="Getting Started">
 
 ## :rocket: Getting Started
 
 To get a local copy up and running follow these simple example steps.
+
+<div id="Prerequisites">
 
 ### Pre-requisites
 
@@ -73,11 +85,13 @@ The input MSA file should be be situated within `./results` folder, and its suff
 
 ##### Downstream Task Data
 
-The training, validation, and testing datasets used for our downstream tasks are currently available to the public and can be downloaded via this [Google Drive link](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=share_link) or [Baidu Netdisk Link](https://pan.baidu.com/s/1mLUDv4e3txx_G-CAGiMCDQ?pwd=1234).
+The training, validation, and testing datasets used for our downstream tasks are currently available to the public and can be downloaded via this [Google Drive link](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing) or [Baidu Netdisk Link](https://pan.baidu.com/s/1mLUDv4e3txx_G-CAGiMCDQ?pwd=1234).
 
 #### Access Pre-trained Model
 
 Download [pre-trained](https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view?usp=share_link) models from and place the .ckpt files into the `./pretrained` folder.
+
+<div id="Inference">
 
 ### Inference
 
@@ -172,7 +186,9 @@ We show the final result directory as follow:
     |-- 2DRB_1.ct
     `-- 2DRB_1.prob
 ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<div id="Online RNA-MSM Sever">
 
 ## :computer: Online RNA-MSM Sever
 
@@ -182,7 +198,9 @@ As a preview, take a swift glance at the website:
 
 ![image-20230315145444347](https://yikundata.oss-cn-hangzhou.aliyuncs.com/typora/image-20230315145444347.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<div id="Citation">
 
 ## :pushpin: Citation
 
@@ -207,12 +225,12 @@ If you find our work useful in your research or if you use parts of this code pl
 
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<div id="Contact">
 
 <!-- CONTACT -->
 ## :phone: Contact
 
 Yikun Zhang - yikun.zhang@stu.pku.edu.cn
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
