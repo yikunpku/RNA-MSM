@@ -33,7 +33,7 @@
 
 ## 📣 Updates
 
-* **[2024/7/22]**: We release the [downstream task datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing) along with its Multiple Sequence Alignment (MSA) searched by [RNACMAP3]((https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz)). Included in this release is the split RNA ID, enabling you to utilize this dataset for replication or your own research.
+* **[2024/7/22]**: We release the [downstream task datasets](https://drive.google.com/drive/folders/1jYqk7rAp9ysJCBXOa5Yx4Z9es89h-f2h?usp=sharing) along with its Multiple Sequence Alignment (MSA) searched by [RNACMAP3](https://apisz.sparks-lab.org:8443/downloads/RNAcmap3/RNAcmap3.tgz). Included in this release is the split RNA ID, enabling you to utilize this dataset for replication or your own research.
 
 <!-- ABOUT THE PROJECT -->
 <div id="About The Project">
