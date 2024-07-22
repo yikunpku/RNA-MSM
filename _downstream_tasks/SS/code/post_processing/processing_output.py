@@ -33,7 +33,7 @@ def ct_file_output(pairs, seq, id, save_result_path):
     # os.chdir(save_result_path)
     # print(os.path.join(save_result_path, str(id[0:-1]))+'.spotrna')
     np.savetxt(os.path.join(save_result_path, str(id)) + '.ct', (temp), delimiter='\t\t', fmt="%s",
-               header=str(len(seq)) + '\t\t' + str(id) + '\t\t' + 'SPOT-RNA output\n', comments='')
+               header=str(len(seq)) + '\t\t' + str(id) + '\t\t' + 'RNAMSM_SS output\n', comments='')
 
     return
 
